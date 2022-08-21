@@ -39,5 +39,36 @@ In SMOTE Oversampling method, we used SMOTE algorithm to resample the data, and 
 
 ### Undersampling
 
-- For Undersampling, we will use the Cluster Centroids algorithm to resample the data, and create training and testing groups from the given dataset. The below image shows the respective balanced accuracy score, confusion matrix, and classification report.
+ For Undersampling, we will use the Cluster Centroids algorithm to resample the data, and create training and testing groups from the given dataset. The below image shows the respective balanced accuracy score, confusion matrix, and classification report.
 
+![]()
+
+- The balanced accuracy score for Undersampling model is around 52%,means the model predicted the lowest credit risk of all the models. So, about 52% of all testing data was classified properly.
+- The precision score for this model are positively skewed towards low-risk loans, which is 1.00. But, for high-risk loans the score is minimal 0.01,means this model is not a good fit for high-risk loans.
+- The recall score for high-risk and low-risk loans are 60% and 43% respectively.The F1 score for high-risk and low-risk loans are .01 and .60 respectively.We can predict that this model is not great for identifying high-risk loans.
+
+### Combination (Over and Under) Sampling
+
+In this method we will resample the data using the SMOTEENN algorithm to resample the data.The logistic regression model was fitted to get the respective balanced accuracy score, confusion matrix, and classification report.
+
+![]()
+
+- The balanced accuracy score for Undersampling model is around 53%, means the model predicted the lowest credit risk of all the models. So, about 53% of all testing data was classified properly.
+- The precision score for this model are positively skewed towards low-risk loans, which is 1.00. But, for high-risk loans the score is minimal 0.01,means this model is not a good fit for high-risk loans.
+- The recall score for high-risk and low-risk loans are 72% and 58% respectively.In comparision to other methods,this model is good at identifying high-risk loans.
+- The F1 score for high-risk and low-risk loans are .02 and .73 respectively.We can predict that this model is not great for identifying high-risk loans.
+
+### Balanced Random Forest Classifier
+
+In Balanced Random Forest Classifier method, we used Balanced Random Forest Classifier algorithum to resample the training data with 100 estimators to classify the testing data. The below image shows the balanced accuracy score, confusion matrix, and classification report respectively.
+
+![]()
+
+- The balanced accuracy score for this model is higher than other which is almost 78%, so, the the testing data was 78% accurately classified.
+- The precision score for high-risk loans is 0.03 which is very low compare to low-risk loans 1.00, indicates may be a large number of false negatives.
+- The recall score for low-risk loans are vary high almost 89% in comparision with high-risk loans 68%, indicates that the classifier can predict true positives for low-risk loans.
+- The F1 score for low-risk loans are 94%, indicates the model is a good fit for classifying low-risk loan.
+
+### Easy Ensemble AdaBoost Classifier
+
+![]()

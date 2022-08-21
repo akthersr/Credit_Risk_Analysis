@@ -21,7 +21,7 @@ The results of all six machine learning models including their balanced accuracy
 
 For Naive Random Oversampling, we will use the oversampling RandomOverSampler algorithm to resample the data, and create training and testing groups from the given dataset. The below image shows the respective balanced accuracy score, confusion matrix, and classification report.
 
-![]()
+![](https://github.com/akthersr/Credit_Risk_Analysis/blob/main/Resources/Naive.png)
 
 - The balanced accuracy for this model is around 61%.The precision for the high-risk loans are 0.01 and the precision for low-risk loans are almost 1.00 means correctly predicted.The recall scores for this model evaluate that positive low-risk loans(.63) are slightly higher than high-risk loans(.60).F1 score is a weighted average of the true positive rate (recall) and precision,the F1 score for high-risk loans are .02 and low-risk loans are .78 repectively.
 
@@ -31,7 +31,7 @@ For Naive Random Oversampling, we will use the oversampling RandomOverSampler al
 
 In SMOTE Oversampling method, we used SMOTE algorithm to resample the data, and use the resampled data to train a logistic regression model. The below image shows the respective balanced accuracy score, confusion matrix, and classification report.
 
-![]()
+![](https://github.com/akthersr/Credit_Risk_Analysis/blob/main/Resources/smote.png)
 
 - The balanced accuracy score for this model is around 62%,so, the model predicted credit risk accurately.The precision for the high-risk loans are 0.01 and the precision for low-risk loans are almost 1.00 means correctly predicted.The recall scores for this model evaluate that positive low-risk loans(.65) are slightly higher than high-risk loans(.60).So, this model is not good for predicting high-risk loans.
 
@@ -41,7 +41,7 @@ In SMOTE Oversampling method, we used SMOTE algorithm to resample the data, and 
 
  For Undersampling, we will use the Cluster Centroids algorithm to resample the data, and create training and testing groups from the given dataset. The below image shows the respective balanced accuracy score, confusion matrix, and classification report.
 
-![]()
+![](https://github.com/akthersr/Credit_Risk_Analysis/blob/main/Resources/cluster.png)
 
 - The balanced accuracy score for Undersampling model is around 52%,means the model predicted the lowest credit risk of all the models. So, about 52% of all testing data was classified properly.
 - The precision score for this model are positively skewed towards low-risk loans, which is 1.00. But, for high-risk loans the score is minimal 0.01,means this model is not a good fit for high-risk loans.
@@ -51,7 +51,7 @@ In SMOTE Oversampling method, we used SMOTE algorithm to resample the data, and 
 
 In this method we will resample the data using the SMOTEENN algorithm to resample the data.The logistic regression model was fitted to get the respective balanced accuracy score, confusion matrix, and classification report.
 
-![]()
+![](https://github.com/akthersr/Credit_Risk_Analysis/blob/main/Resources/SMOTEENN.png)
 
 - The balanced accuracy score for Undersampling model is around 53%, means the model predicted the lowest credit risk of all the models. So, about 53% of all testing data was classified properly.
 - The precision score for this model are positively skewed towards low-risk loans, which is 1.00. But, for high-risk loans the score is minimal 0.01,means this model is not a good fit for high-risk loans.
@@ -62,7 +62,7 @@ In this method we will resample the data using the SMOTEENN algorithm to resampl
 
 In Balanced Random Forest Classifier method, we used Balanced Random Forest Classifier algorithum to resample the training data with 100 estimators to classify the testing data. The below image shows the balanced accuracy score, confusion matrix, and classification report respectively.
 
-![]()
+![](https://github.com/akthersr/Credit_Risk_Analysis/blob/main/Resources/random%20forest.png)
 
 - The balanced accuracy score for this model is higher than other which is almost 78%, so, the the testing data was 78% accurately classified.
 - The precision score for high-risk loans is 0.03 which is very low compare to low-risk loans 1.00, indicates may be a large number of false negatives.
@@ -71,4 +71,4 @@ In Balanced Random Forest Classifier method, we used Balanced Random Forest Clas
 
 ### Easy Ensemble AdaBoost Classifier
 
-![]()
+![](https://github.com/akthersr/Credit_Risk_Analysis/blob/main/Resources/ADA.png)

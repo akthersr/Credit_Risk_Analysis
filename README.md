@@ -23,11 +23,21 @@ For Naive Random Oversampling, we will use the oversampling RandomOverSampler al
 
 ![]()
 
-- The balanced accuracy for this model is .615.The precision for the high-risk loans are 0.01 and the precision for low-risk loans are almost 1.00 means correctly predicted.The recall scores for this model evaluate that positive low-risk loans(.63) are slightly higher than high-risk loans(.60).F1 score is a weighted average of the true positive rate (recall) and precision,the F1 score for high-risk loans are .02 and low-risk loans are .78 repectively.
+- The balanced accuracy for this model is around 61%.The precision for the high-risk loans are 0.01 and the precision for low-risk loans are almost 1.00 means correctly predicted.The recall scores for this model evaluate that positive low-risk loans(.63) are slightly higher than high-risk loans(.60).F1 score is a weighted average of the true positive rate (recall) and precision,the F1 score for high-risk loans are .02 and low-risk loans are .78 repectively.
 
 - In summary, this model may not be the best one for preventing fraudulent loans because the model's accuracy, 0.615, is low, and the precision and recall are not good enough to state that the model will be good at classifying fraudulent loans.
 
 ### SMOTE Oversampling
 
-The SMOTE Oversampling method used SMOTE algorithm to resample the data, and use the resampled data to train a logistic regression model.
+In SMOTE Oversampling method, we used SMOTE algorithm to resample the data, and use the resampled data to train a logistic regression model. The below image shows the respective balanced accuracy score, confusion matrix, and classification report.
+
+![]()
+
+- The balanced accuracy score for this model is around 62%,so, the model predicted credit risk accurately.The precision for the high-risk loans are 0.01 and the precision for low-risk loans are almost 1.00 means correctly predicted.The recall scores for this model evaluate that positive low-risk loans(.65) are slightly higher than high-risk loans(.60).So, this model is not good for predicting high-risk loans.
+
+- The F1 score for this model are similar to Naive Random Oversampling method. The F1 score for high-risk loans are .02 and low-risk loans are .78 repectively. This is a good model for predicting low-risk loans than high-risk loans.
+
+### Undersampling
+
+- For Undersampling, we will use the Cluster Centroids algorithm to resample the data, and create training and testing groups from the given dataset. The below image shows the respective balanced accuracy score, confusion matrix, and classification report.
 

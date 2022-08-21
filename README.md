@@ -51,7 +51,7 @@ In SMOTE Oversampling method, we used SMOTE algorithm to resample the data, and 
 
 In this method we will resample the data using the SMOTEENN algorithm to resample the data. The logistic regression model was fitted to get the respective balanced accuracy score, confusion matrix, and classification report.
 
-! [](https://github.com/akthersr/Credit_Risk_Analysis/blob/main/Resources/SMOTEENN.png)
+![](https://github.com/akthersr/Credit_Risk_Analysis/blob/main/Resources/SMOTEENN.png)
 
 - The balanced accuracy score for Undersampling model is around 53%, means the model predicted the lowest credit risk of all the models. So, about 53% of all testing data was classified properly.
 - The precision score for this model is positively skewed towards low-risk loans, which is 1.00. But, for high-risk loans the score is minimal 0.01, means this model is not a good fit for high-risk loans.
